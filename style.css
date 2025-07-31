@@ -1,0 +1,113 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+  background: #121212;
+  color: #f1f1f1;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.4);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  margin-bottom: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00bcd4;
+}
+
+h1 {
+  color: #00bcd4;
+  margin-bottom: 5px;
+}
+
+.typing-text {
+  color: #80deea;
+  font-weight: bold;
+  font-size: 1.1rem;
+  height: 22px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: #121212;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover { background: #0097a7; color: #fff; }
+
+h2 {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+}
+
+ul { margin-left: 20px; margin-bottom: 15px; }
+ul.skills { display: flex; flex-wrap: wrap; gap: 10px; }
+ul.skills li {
+  background: rgba(0, 188, 212, 0.1);
+  padding: 5px 10px;
+  border: 1px solid #00bcd4;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+table th {
+  text-align: left;
+  color: #00bcd4;
+  padding: 4px;
+  width: 35%;
+}
+table td {
+  padding: 4px;
+  color: #cceeff;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .container { padding: 20px; }
+  h1 { font-size: 1.8rem; }
+  .profile-pic { width: 90px; height: 90px; }
+  .typing-text { font-size: 1rem; }
+  ul.skills { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  .btn { font-size: 0.9rem; padding: 8px 16px; }
+}
